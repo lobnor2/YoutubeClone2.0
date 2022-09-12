@@ -13,7 +13,7 @@ const SearchBar = () => {
         border: "1px solid #e3e3e3",
         pl: 2,
         boxShadow: "none",
-        mr: { sm: 5 }, //margin right only on small devices
+        mr: { sm: 3 }, //margin right only on small devices
       }}
     >
       <input
