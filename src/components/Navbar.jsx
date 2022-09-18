@@ -9,7 +9,7 @@ const Navbar = () => (
   <Stack
     direction="row"
     alignItems="center"
-    borderBottom="1px solid white"
+    borderBottom="1px solid #767676"
     p={2}
     sx={{
       position: "sticky",
