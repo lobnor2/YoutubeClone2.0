@@ -5,11 +5,11 @@ import Videos from "./Videos";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 
 const Feed = () => {
-  const [selectedCategory, setSelectedCategory] = useState("New");
+  const [selectedCategory, setSelectedCategory] = useState("Tibetan vlog");
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetchFromAPI(`search?part=snippet&p=${selectedCategory}`).then((data) => {
+    fetchFromAPI(`search?part=snippet&q=${selectedCategory}`).then((data) => {
       setVideos(data.items);
     });
   }, [selectedCategory]);
@@ -40,10 +40,14 @@ const Feed = () => {
           variant="h4"
           fontWeight="bold"
           mb={2}
-          sx={{ color: "white" }}
+          sx={{
+            color: "white",
+            display: "flex",
+            justifyContent: "center",
+          }}
         >
           {selectedCategory}
-          <span style={{ color: "#F31503" }}> Videos</span>
+          <span style={{ color: "#F31503", marginLeft: "10px" }}> Videos</span>
         </Typography>
         <Videos videos={videos} />
       </Box>
