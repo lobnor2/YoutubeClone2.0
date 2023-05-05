@@ -15,9 +15,6 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
         height: "305px",
         margin: "auto",
         marginTop: marginTop,
-        // display: "flex",
-        // justifyContent: "center",
-        // alignItems: "center",
       }}
     >
       <Link to={`/channel/${channelDetail?.id?.channelId}`}>
@@ -27,7 +24,6 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            // textAlign: "center",
             color: "#fff",
           }}
         >
