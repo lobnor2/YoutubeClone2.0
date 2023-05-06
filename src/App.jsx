@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <h1>welcome to youtube</h1>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <h1 className="text-3xl font-bold text-gray-500">Hello world!</h1>
     </>
   );
 }
