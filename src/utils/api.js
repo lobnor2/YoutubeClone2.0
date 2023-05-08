@@ -6,7 +6,7 @@ const options = {
     gl: "US",
   },
   headers: {
-    "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY_P,
+    "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
     "X-RapidAPI-Host": "youtube138.p.rapidapi.com",
   },
 };
