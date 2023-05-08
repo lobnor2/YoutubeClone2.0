@@ -21,17 +21,19 @@ export const AppContext = ({ children }) => {
       setLoading(false);
     });
   };
-  <Context.Provider
-    value={{
-      loading,
-      setLoading,
-      searchResults,
-      selectCategories,
-      setSelectCategories,
-      mobileMenu,
-      setMobileMenu,
-    }}
-  >
-    {children}
-  </Context.Provider>;
+  return (
+    <Context.Provider
+      value={{
+        loading,
+        setLoading,
+        searchResults,
+        selectCategories,
+        setSelectCategories,
+        mobileMenu,
+        setMobileMenu,
+      }}
+    >
+      {children}
+    </Context.Provider>
+  );
 };
