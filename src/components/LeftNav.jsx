@@ -24,7 +24,7 @@ const LeftNav = () => {
     <div className="md:block w-[240px] overflow-y-auto h-full py-4 bg-black absolute md:relative z-10 translate-x-[-240px] md:translate-x-0 transition-all border border-blue-500 text-white">
       <div className="flex px-5 flex-col">
         {categories.map((item) => (
-          <>
+          <React.Fragment key={item.name}>
             <LeftNavMenuItem
               text={item.type === "home" ? "Home" : item.name}
               icon={item.icon}
@@ -37,7 +37,7 @@ const LeftNav = () => {
               }`}
             />
             {item.divider && <hr className="my-5 border-white/[0.2]" />}
-          </>
+          </React.Fragment>
         ))}
         <hr className="my-5 border-white/[0.2]" />
         <div className="text-white/[0.5] text-[12px] flex justify-center">
