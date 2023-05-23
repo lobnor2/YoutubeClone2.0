@@ -5,7 +5,7 @@ import { BsFillCheckCircleFill } from "react-icons/bs";
 import VideoLength from "../shared/videoLength";
 const VideoCard = ({ video }) => {
   return (
-    <Link to={`/video/${video?.videoId}`}>
+    <Link to={`/videodetails/${video?.videoId}`}>
       <div className="flex flex-col mb-8">
         <div className="relative h-48 md:h-48 md:rounded-xl overflow-hidden">
           <img
@@ -33,7 +33,7 @@ const VideoCard = ({ video }) => {
                 <BsFillCheckCircleFill className="text-white/[0.5] text-[12px] ml-1" />
               )} */}
             </span>
-            <div className="flex text-[12px] font-semibold text-white/[0.7] truncate overflow-hidden">
+            <div className="flex text-[12px]  mt-1 font-semibold text-white/[0.7] truncate overflow-hidden">
               <span>{`${abbreviateNumber(video?.stats?.views)} views`}</span>
               <span className="flex text-[24px] leading-none font-bold text-white/[0.7] relative top-[-10px] mx-1">
                 .
