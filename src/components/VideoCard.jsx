@@ -7,7 +7,7 @@ const VideoCard = ({ video }) => {
   return (
     <Link to={`/video/${video?.videoId}`}>
       <div className="flex flex-col mb-8">
-        <div className="relative h-48 md:h-40 md:rounded-xl overflow-hidden">
+        <div className="relative h-48 md:h-48 md:rounded-xl overflow-hidden">
           <img
             src={video?.thumbnails?.[0]?.url}
             alt=""
@@ -34,10 +34,7 @@ const VideoCard = ({ video }) => {
               )} */}
             </span>
             <div className="flex text-[12px] font-semibold text-white/[0.7] truncate overflow-hidden">
-              <span>{`${abbreviateNumber(
-                video?.author?.stats?.views,
-                2
-              )} views`}</span>
+              <span>{`${abbreviateNumber(video?.stats?.views)} views`}</span>
               <span className="flex text-[24px] leading-none font-bold text-white/[0.7] relative top-[-10px] mx-1">
                 .
               </span>
