@@ -26,7 +26,9 @@ const VideoCard = ({ video }) => {
             </div>
           </div>
           <div className="flex flex-col ml-3 overflow-hidden">
-            <span className="text-sm font-bold truncate">{video?.title}</span>
+            <span className="text-sm font-bold line-clamp-2">
+              {video?.title}
+            </span>
             <span className="text-[12px] font-semibold mt-1 text-white/[0.7] flex items-center">
               {video?.author?.title}
               {/* {video?.author?.badges[0].type === "VERIFIED_CHANNEL" && (
