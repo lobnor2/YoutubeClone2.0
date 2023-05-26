@@ -21,6 +21,7 @@ const Header = () => {
       searchQuery?.length > 0
     ) {
       navigate(`/searchresult/${searchQuery}`);
+      setSearchQuery("");
     }
   };
   const mobileMenuToggle = () => {
