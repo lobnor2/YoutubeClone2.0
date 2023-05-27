@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import LeftNavMenuItem from "./LeftNavMenuItem";
 import { categories } from "../utils/constants";
 import { Context } from "../context/contextApi";
+import { AiFillGithub } from "react-icons/ai";
 
 const LeftNav = () => {
   const { selectCategories, setSelectCategories, mobileMenu } =
@@ -44,8 +45,16 @@ const LeftNav = () => {
           </React.Fragment>
         ))}
         <hr className="my-5 border-white/[0.2]" />
-        <div className="text-white/[0.5] text-[12px] flex justify-center">
-          Clone by: lobnor
+        <div className="text-white/[0.5] text-[12px] flex justify-center items-center">
+          <span>Clone by: lobnor</span>
+          <span>
+            <a
+              href="https://github.com/lobnor2/YoutubeClone2.0"
+              target="_blank"
+            >
+              <AiFillGithub className="text-white ml-2 text-xl cursor-pointer" />
+            </a>
+          </span>
         </div>
       </div>
     </div>
