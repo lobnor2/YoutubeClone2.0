@@ -37,7 +37,7 @@ const Header = () => {
       <div className="flex h-5 items-center">
         {pageName !== "video" && (
           <div
-            className="flex md:hidden md:mr-6 cursor-pointer items-center justify-center h-10 w-10 rounded-full hover:bg-[#303030]/[0.6]"
+            className="flex md:hidden md:mr-6 cursor-pointer items-center justify-center h-10 w-10 rounded-full hover:bg-[#303030]/[0.6] mr-1"
             onClick={mobileMenuToggle}
           >
             {mobileMenu ? (
@@ -49,20 +49,20 @@ const Header = () => {
         )}
         <Link to="/" className="flex h-5 items-center">
           <img
-            className="h-full hidden dark:md:block "
+            className="h-full hidden md:block"
             src={ytLogo}
-            alt="Youtube"
+            alt="Youtube for Screen Larger than Mobile"
           />
           <img
             className="h-full  md:hidden "
             src={tyLogoMobile}
-            alt="Youtube"
+            alt="Youtube Logo for Mobile"
           />
         </Link>
       </div>
       {/* search input and button */}
       <div className="group flex items-center ">
-        <div className="flex  h-8 md:h-10 md:ml-10 md:pl-5 border border-[#303030] rounded-l-3xl group-focus-within:border-blue-500 md:group-focus-">
+        <div className="flex h-8 md:h-10 md:ml-10 md:pl-5 border border-[#303030] rounded-l-3xl group-focus-within:border-blue-500 md:group-focus-">
           <div className="w-10 items-center justify-center hidden group-focus-within:md:flex">
             <IoIosSearch className="text-white text-xl " />
           </div>
