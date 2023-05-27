@@ -31,9 +31,9 @@ const VideoCard = ({ video }) => {
             </span>
             <span className="text-[12px] font-semibold mt-1 text-white/[0.7] flex items-center">
               {video?.author?.title}
-              {/* {video?.author?.badges[0].type === "VERIFIED_CHANNEL" && (
+              {video?.author?.badges[0]?.type === "VERIFIED_CHANNEL" && (
                 <BsFillCheckCircleFill className="text-white/[0.5] text-[12px] ml-1" />
-              )} */}
+              )}
             </span>
             <div className="flex text-[12px]  mt-1 font-semibold text-white/[0.7] truncate overflow-hidden">
               <span>{`${abbreviateNumber(video?.stats?.views)} views`}</span>
