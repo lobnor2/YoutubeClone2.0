@@ -72,6 +72,7 @@ const Header = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
             onKeyUp={searchQueryHandler}
             value={searchQuery}
+            placeholder="Search"
           />
         </div>
         <button className="w-[40px] md:w-[60px] md:h-10 flex h-8 items-center justify-center border border-l-0 border-[#303030] rounded-r-3xl bg-white/[0.1]">
