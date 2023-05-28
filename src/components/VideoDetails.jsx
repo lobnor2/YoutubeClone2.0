@@ -97,9 +97,11 @@ const VideoDetails = () => {
               </div>
             </div>
           </div>
-          <div className="flex border border-white w-full h-[500px] mt-4"></div>
+          <div className="flex border border-white w-full mt-4 text-white">
+            This is comments section
+          </div>
         </div>
-        <div className="flex flex-col py-6 px-4 overflow-y-auto lg:w-[350px] xl:w-[400px]">
+        <div className="flex z-1 flex-col py-6 px-4 overflow-y-auto lg:w-[350px] xl:w-[400px]">
           {relatedVideos?.contents?.map((item, index) => {
             if (item.type !== "video") return false;
             return <SuggestionVideoCard key={index} video={item.video} />;
