@@ -97,8 +97,32 @@ const VideoDetails = () => {
               </div>
             </div>
           </div>
+          {/* description */}
+          <div className="flex flex-col mt-3 text-white bg-[#3F3F3F]/[0.7] hover:bg-[#3F3F3F] rounded-lg p-3 cursor-pointer">
+            <div>
+              <span>
+                {`${abbreviateNumber(video?.stats?.views)} views ${
+                  video?.publishedTimeText
+                } `}
+              </span>
+              <span className="text-[#A7A7A7]">
+                {video?.superTitle?.items?.map((item) => (
+                  <span>{item}</span>
+                ))}
+              </span>
+            </div>
+            {/* for first line till full stop */}
+            <div>{video?.description.split(".")[0]}</div>
+          </div>
+
+          {/* comments */}
           <div className="flex border border-white w-full mt-4 text-white">
-            This is comments section
+            <div className="flex">
+              <span className=" text-lg">
+                {video?.stats?.comments} Comments
+              </span>
+            </div>
+            <div className="flex"></div>
           </div>
         </div>
         <div className="flex z-1 flex-col py-6 px-4 overflow-y-auto lg:w-[350px] xl:w-[400px]">
