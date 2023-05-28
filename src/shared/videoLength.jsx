@@ -7,7 +7,7 @@ const VideoLength = ({ time }) => {
     .seconds(time)
     .format("H:mm:ss");
   return (
-    <div className="absolute z-10 bottom-1 right-1 bg-black py-1 px-2 text-white text-xs rounded-md">
+    <div className="absolute z-1 bottom-1 right-1 bg-black py-1 px-2 text-white text-xs rounded-md">
       {videoLengthInSeconds}
     </div>
   );
